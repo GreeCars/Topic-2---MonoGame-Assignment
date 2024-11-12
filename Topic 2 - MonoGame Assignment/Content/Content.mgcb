@@ -25,12 +25,12 @@
 /processorParam:TextureFormat=Color
 /build:circle.png
 
-#begin File.spritefont
+#begin FaceFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
-/build:File.spritefont
+/build:FaceFont.spritefont
 
 #begin rectangle.png
 /importer:TextureImporter

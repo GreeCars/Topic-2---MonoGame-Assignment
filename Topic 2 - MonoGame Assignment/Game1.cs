@@ -11,6 +11,7 @@ namespace Topic_2___MonoGame_Assignment
 
         Texture2D circleTexture;
         Texture2D rectangleTexture;
+        SpriteFont faceFont;
 
         Rectangle head, leftEyeRect, rightEyeRect, mouthRect;
         public Game1()
@@ -42,6 +43,7 @@ namespace Topic_2___MonoGame_Assignment
             // TODO: use this.Content to load your game content here
             circleTexture = Content.Load<Texture2D>("circle");
             rectangleTexture = Content.Load<Texture2D>("rectangle");
+            faceFont = Content.Load<SpriteFont>("FaceFont");
         }
 
         protected override void Update(GameTime gameTime)
@@ -65,6 +67,7 @@ namespace Topic_2___MonoGame_Assignment
             _spriteBatch.Draw(rectangleTexture, leftEyeRect, Color.Black);
             _spriteBatch.Draw(rectangleTexture, rightEyeRect, Color.Black);
             _spriteBatch.Draw(circleTexture, mouthRect, Color.Black);
+            _spriteBatch.DrawString(faceFont, "Nose", new Vector2(365, 225), Color.White);
 
             _spriteBatch.End();
 
